@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conestoga Garage Sale</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+     
+    <div class="form-container">
+
+        <h1>Conestoga Garage Sale</h1>
+        <h2>Raising money for the frontline fund</h2>
+
+        <form id="garageSaleForm" name="garageSaleForm">
+            <div class="error-messages" id="errorMessage"></div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fullName" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" placeholder="abc@domain.com" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="creditcard">Credit Card Number</label>
+                <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" id="creditcard" name="creditcard">
+            </div>
+
+            <div class="form-group">
+                <label for="creditcardexpirymonth">Credit Card Expiry Month</label>
+                <input type="text" placeholder="MMM" id="creditcard_expiry_month" name="creditcard_expiry_month">
+            </div>
+
+            <div class="form-group">
+                <label for="creditcardexpiryyear">Credit Card Expiry Year</label>
+                <input type="text" placeholder="yyy" id="creditcard_expiry_year" name="creditcard_expiry_year">
+            </div>
+
+            <h3>Buy generouslly</h3>
+
+            <div class="form-group">
+                <label for="water-bottle">Number of Water Bottles ($5)</label>
+                <input type="text" placeholder="10" id="water-bottle" name="water-bottle" class="product-quantity">
+            </div>
+
+            <div class="form-group">
+                <label for="cap">Number of Caps ($20)</label>
+                <input type="text" placeholder="10" id="cap" name="cap" class="product-quantity">
+            </div>
+
+            <div class="form-group">
+                <label for="pen">Number of Pens ($2)</label>
+                <input type="text" placeholder="10" id="pen" name="pen" class="product-quantity">
+            </div>
+
+            <div class="form-group">
+                <label for="candy-bag">Number of Candy Bags ($10)</label>
+                <input type="text" placeholder="10" id="candy-bag" name="candy-bag" class="product-quantity">
+            </div>
+
+            <div class="form-group">
+                <label for="cup-cake">Number of Cup Cakes ($3)</label>
+                <input type="text" placeholder="10" id="cup-cake" name="cup-cake" class="product-quantity">
+            </div>
+
+            <div>
+                <input type="button" class="checkout-btn" onclick="onSubmit()" value="Checkout">
+            </div>
+        </form>
+
+    </div>
+<div class="receipt" id="receipt"></div>
+
+</body>
+
+</html>
